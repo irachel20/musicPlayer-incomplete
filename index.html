@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RJ Music Player</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/utills.css" />
+    <link rel="stylesheet" href="./styles/stylecodes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <audio
+        src="https://ts9.tarafdari.com/contents/user627598/content-sound/aud-20210403-wa0001.mp3"
+        id="track"
+      ></audio>
+      <header>
+        <nav class="p-4 pt-5 navbar navbar-expand-lg navbar-light bg-white">
+          <img
+            src="./images/yellowmwllow.png"
+            width="160px"
+            height="38px"
+            class="me-5"
+            alt=""
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex gap-3">
+              <a class="nav-link fs-3" href="#">Home</a>
+              <li class="nav-item active"></li>
+              <li class="nav-item active">
+                <a class="nav-link fs-3" href="#">Music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-3" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="rounded-3 p-2 px-4 bg-transparent border-light-blue color-light-blue fs-4"
+          >
+            Sign Up
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="flex-wrap head-img d-flex flex-column justify-content-center align-items-center mb-5"
+        >
+          <h1 class="mb-5 text-light text-center px-sm-3">
+            International Musics in POP - ROCK - HipHop and etc
+          </h1>
+          <p class="mb-4 fs-4 w-50 text-center text-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
+            pellentesque nullam eget risus. Rhoncus, sociis duis sagittis
+            nulla.Rhoncus !
+          </p>
+          <button
+            class="rounded-3 p-2 px-4 border-yellow color-yellow bg-transparent fs-4"
+          >
+            Listen NOW !
+          </button>
+        </section>
+        <section
+          class="most-popular d-flex flex-column align-items-center pt-5 justify-content-center"
+        >
+          <p class="title display-6 fw-semibold mb-5 pb-5">Most Popular</p>
+          <div
+            class="flex-wrap music-cards d-flex align-items-center justify-content-center gap-5"
+          ></div>
+        </section>
+        <section class="current-music d-flex flex-column pt-5">
+          <p class="title display-6 fw-semibold mb-5 pb-5 align-self-center">
+            Current Music
+          </p>
+          <div
+            class="image-and-details flex-wrap d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="current-music-image box-shadow-2 me-5 rounded-circle d-flex justify-content-center align-items-center text-light"
+            >
+              <img
+                id="plyPause"
+                src="./images/plyply.svg"
+                class="ms-5 mt-4 opacity-90"
+                alt=""
+              />
+            </div>
+            <div class="current-details d-flex flex-column ms-5">
+              <p class="current-singer-name card-text fs-1 d-flex text-center">
+                Rihanna ft Sia
+              </p>
+              <p
+                class="current-song-name card-text fs-3 d-flex text-center mb-5"
+              >
+                Shine Bright Like A Diamond
+              </p>
+              <div class="progress-and-time d-flex flex-column mt-3">
+                <div class="time d-flex justify-content-between">
+                  <p class="current-time color-gray-3 fs-4">00:00</p>
+                  <p class="full-time color-gray-3 fs-4">00:00</p>
+                </div>
+                <div class="progress position-relative rounded-4">
+                  <input
+                    class="w-100 h-100 bg-gray"
+                    id="music-range"
+                    type="range"
+                  />
+                  <div class="bar position-absolute"></div>
+                </div>
+              </div>
+              <div
+                class="controler display-5 d-flex align-items-center mt-5 color-gray2 gap-5"
+              >
+                <i class="fa fa-random fs-3 mt-2" id="shuffle"></i>
+                <i class="fa fa-angle-double-left" id="left-angle"></i>
+                <i class="fa fa-play fs-3 mt-2" id="middle-pause"></i>
+                <i class="fa fa-angle-double-right" id="right-angle"></i>
+                <i class="fa fa-repeat fs-3 mt-2" id="repeat"></i>
+                <i class="fa fa-volume-up fs-2 mt-2 ms-19" id="mute"></i>
+                <input min="0" max="10" type="range" class="mt-2 volume-input ms-auto " id="volume">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-us d-flex flex-column mt-5 pt-5">
+          <p class="title display-6 fw-semibold mb-5 pb-5 align-self-center">
+            About Us
+          </p>
+
+          <div
+            class="d-flex flex-sm-wrap justify-content-around align-items-center"
+          >
+            <p class="w-50 fs-4 lh-lg d-flex flex-column">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+              duis viverra ullamcorper mollis.
+              <span
+                >Nam diam amet, sit tellus in sed gravida. Tincidunt odio
+                convallis enim leo integer viverra vitae.</span
+              >
+              Amet diam blandit at donec ut sit porttitor. Nam diam amet, sit
+              tellus in sed gravida. Tincidunt odio convallis enim leo integer
+              viverra vitae.
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                duis viverra ullamcorper mollis. Amet diam blandit at donec ut
+                sit porttitor. Nam diam amet, sit tellus in sed gravida.
+                Tincidunt odio convallis enim leo integer viverra vitae.</span
+              >
+            </p>
+            <img
+              src="./images/musicplayerrectangles.png"
+              class="color-yellow"
+              width="250px"
+              height="250px"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="contact-us d-flex flex-column mt-5 pt-5">
+          <p class="title display-6 fw-semibold mb-5 pb-5 align-self-center">
+            Contact Us
+          </p>
+          <form class="d-flex flex-column align-items-center gap-4">
+            <div class="form-group w-75">
+              <input
+                type="email"
+                class="form-control fs-4 box-shadow"
+                style="height: 4rem"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <textarea
+              class="form-group w-75 p-3 border-gray rounded-3 fs-4 box-shadow mb-5"
+              placeholder="Type your message here ..."
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button
+              class="rounded-3 border-0 mb-5 text-white bg-light-blue fs-3 w-25 py-4"
+            >
+              Send Message
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer class="bg-dark w-100 mt-5 p-5 h-max-content">
+        <div class="d-flex flex-wrap gap-5 justify-content-center">
+          <div>
+            <i class="fa fa-instagram text-light fs-4 me-3"></i>
+            <a class="text-decoration-none text-light fs-4">@rjmusicplayer</a>
+          </div>
+          <div>
+            <i class="fa fa-facebook text-light fs-4 me-3"></i>
+            <a class="text-decoration-none text-light fs-4"
+              >https://www.facebook.com/rjmusicplayer</a
+            >
+          </div>
+          <div>
+            <i class="fa fa-envelope text-light fs-4 me-3"></i>
+            <a class="text-decoration-none text-light fs-4"
+              >rjmusicplayer@gmail.com</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="module" src="./js/apps.js"></script>
+</html>

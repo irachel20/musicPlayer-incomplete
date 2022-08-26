@@ -1,0 +1,59 @@
+.head-img {
+  background-image: url("../images/mainimage.png");
+  height: 44rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-card {
+  height: 29rem;
+}
+
+.current-music-image {
+  background-image: url("../images/Group\ 4.png");
+  background-size: cover;
+  width: 36rem;
+  height: 36rem;
+}
+
+.progress {
+  width: 60rem;
+  height: 1.4rem;
+  background: #e5e5e5;
+}
+
+.bar {
+  height: 100%;
+  background: #82b7e3;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.progress input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+
+.title::before,
+.title::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid rgba(126, 126, 126, 0.604);
+  width: 54.6rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+
+.body-of-card{
+height: 11rem;
+}
+

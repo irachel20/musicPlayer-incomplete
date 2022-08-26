@@ -1,0 +1,95 @@
+.bg-light-blue {
+  background-color: #82b7e3;
+}
+
+.border-light-blue {
+  border: 0.1rem solid #82b7e3;
+}
+
+.color-light-blue {
+  color: #82b7e3;
+}
+
+.bg-yellow {
+  background-color: #f6d500;
+}
+
+.border-yellow {
+  border: 0.1rem solid #f6d500;
+}
+
+.color-yellow {
+  color: #f6d500;
+}
+
+.bg-gray {
+  background-color: #e5e5e5;
+}
+
+.translating-y {
+  transform: translateY(-2rem);
+}
+
+.translating2-y {
+  transform: translatey(-3rem);
+}
+
+.opacity-90 {
+  opacity: 90%;
+}
+
+.ms-8 {
+  margin-left: 8rem;
+}
+
+.me-8 {
+  margin-right: 8rem;
+}
+
+.color-gray {
+  color: #d9d9d9;
+}
+
+.border-gray {
+  border: 0.1rem solid #d9d9d9;
+}
+
+.color-gray2 {
+  color: #b4b4b4;
+}
+
+.h-max-content {
+  height: max-content;
+}
+
+.color-gray-3 {
+  color: #a4a4a4;
+}
+
+.box-shadow {
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(159, 159, 159, 0.2);
+}
+
+.box-shadow-2 {
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.349);
+}
+
+.rounded-top-4{
+  border-top-right-radius:1.5rem ;
+  border-top-left-radius:1.5rem ;
+}
+
+.rounded-bottom-4{
+  border-bottom-right-radius:1.5rem ;
+  border-bottom-left-radius:1.5rem ;
+}
+
+.rounded-both-4{
+border-radius: 1.5rem;
+}
+
+.ms-19{
+  margin-left: 19rem;
+}
